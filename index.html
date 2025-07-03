@@ -12,6 +12,23 @@
     <meta property="og:type" content="website" />
     <link rel="canonical" href="https://cursodescomplicandoia.com.br" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .btn-oblongo {
+            border-radius: 50px;
+            border: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .btn-oblongo:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        .pricing-buttons {
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
     <div class="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50">
@@ -20,7 +37,7 @@
             <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-3 sm:py-4">
                 <div class="flex items-center justify-between">
                     <div class="flex items-center space-x-2 sm:space-x-3">
-                        <div class="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-[#734ef7] to-[#68abe2] rounded-full flex items-center justify-center">
                             <svg class="w-5 h-5 sm:w-7 sm:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
@@ -37,25 +54,28 @@
         <!-- Hero Section -->
         <section class="py-8 sm:py-16 px-3 sm:px-6 lg:px-8">
             <div class="max-w-5xl mx-auto text-center">
-                <span class="mb-6 sm:mb-8 bg-green-100 text-green-800 border border-green-200 text-sm sm:text-lg px-3 py-2 sm:px-6 sm:py-3 mx-auto block w-fit rounded-full">
+                <span class="mb-6 sm:mb-8 bg-green-100 text-green-800 border border-green-200 text-sm sm:text-lg px-3 py-2 sm:px-6 sm:py-3 mx-auto block w-fit rounded-full flex items-center justify-center gap-2">
                     ✨ Primeiro curso de IA do Brasil 100% no WhatsApp
+                    <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.595z"/>
+                    </svg>
                 </span>
                 
                 <h1 class="text-3xl sm:text-5xl md:text-7xl font-bold text-gray-900 mb-6 sm:mb-8 leading-tight px-2">
                     Chegou a hora de você 
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#734ef7] to-[#68abe2]">
                         dominar IA!
                     </span>
                 </h1>
                 
                 <p class="text-lg sm:text-2xl md:text-3xl text-gray-600 mb-8 sm:mb-10 max-w-4xl mx-auto leading-relaxed px-2">
-                    O único curso que ensina Inteligência Artificial de forma simples, divertida e direto no seu WhatsApp. 
+                    O único curso que ensina Inteligência Artificial Generativa de forma simples, divertida e direto no seu WhatsApp. 
                     Sem complicação, sem termos técnicos, só descobertas incríveis!
                 </p>
 
                 <div class="flex flex-col gap-4 sm:gap-6 justify-center items-center mb-12 sm:mb-16 px-2">
                     <button 
-                        class="text-lg sm:text-xl px-8 py-6 sm:px-12 sm:py-8 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 w-full sm:w-auto text-white rounded-lg font-semibold transition-all duration-200 cursor-pointer"
+                        class="btn-oblongo text-lg sm:text-xl px-8 py-6 sm:px-12 sm:py-8 bg-gradient-to-r from-[#734ef7] to-[#68abe2] hover:from-[#6341e6] hover:to-[#5a9bd4] w-full sm:w-auto text-white font-semibold transition-all duration-200 cursor-pointer"
                         onclick="document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });"
                     >
                         🚀 Quero Começar Agora
@@ -95,7 +115,7 @@
                     <div class="border border-red-200 bg-red-50 p-4 sm:p-6 rounded-lg">
                         <div class="pt-4 sm:pt-6">
                             <div class="flex flex-col items-center gap-4 sm:gap-6">
-                                <h3 class="text-xl sm:text-2xl font-semibold text-red-800 text-center">
+                                <h3 class="text-lg sm:text-xl font-semibold text-red-800 text-center">
                                     Medo da Tecnologia
                                 </h3>
                                 <div class="w-full">
@@ -116,7 +136,7 @@
                     <div class="border border-orange-200 bg-orange-50 p-4 sm:p-6 rounded-lg">
                         <div class="pt-4 sm:pt-6">
                             <div class="flex flex-col items-center gap-4 sm:gap-6">
-                                <h3 class="text-xl sm:text-2xl font-semibold text-orange-800 text-center">
+                                <h3 class="text-lg sm:text-xl font-semibold text-orange-800 text-center">
                                     Sentimento de Exclusão
                                 </h3>
                                 <div class="w-full">
@@ -137,7 +157,7 @@
                     <div class="border border-yellow-200 bg-yellow-50 p-4 sm:p-6 rounded-lg">
                         <div class="pt-4 sm:pt-6">
                             <div class="flex flex-col items-center gap-4 sm:gap-6">
-                                <h3 class="text-xl sm:text-2xl font-semibold text-yellow-800 text-center">
+                                <h3 class="text-lg sm:text-xl font-semibold text-yellow-800 text-center leading-tight">
                                     Não Sabe Por Onde Começar
                                 </h3>
                                 <div class="w-full">
@@ -158,14 +178,14 @@
         </section>
 
         <!-- Solution Section -->
-        <section class="py-8 sm:py-12 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        <section class="py-8 sm:py-12 bg-gradient-to-r from-[#734ef7] to-[#68abe2] text-white">
             <div class="max-w-6xl mx-auto px-3 sm:px-6 lg:px-8">
                 <div class="text-center mb-8 sm:mb-12">
                     <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-8 px-2">
                         A Solução que Você Estava Esperando!
                     </h2>
                     <p class="text-lg sm:text-2xl opacity-90 max-w-4xl mx-auto px-2">
-                        Conheça a IAsmim, sua assistente virtual que vai te ensinar IA de forma simples e divertida!
+                        Conheça a IAsmim, sua assistente virtual que vai te ensinar IA Generativa de forma simples e divertida!
                     </p>
                 </div>
                 
@@ -181,8 +201,9 @@
                             </div>
                             <h3 class="text-2xl sm:text-3xl font-bold text-center mb-4 sm:mb-6">Conheça a IAsmim</h3>
                             <p class="text-lg sm:text-xl opacity-90 text-center">
-                                "Oi! Eu sou a IAsmim, sua assistente virtual especializada em ensinar IA de forma simples! 
-                                Vou te mostrar que você já usa inteligência artificial há anos sem saber, e te ensinar muito mais!"
+                                "Oi! Eu sou a IAsmim, sua assistente virtual especializada em IA Generativa! 
+                                Vou te mostrar como criar textos, imagens e muito mais com inteligência artificial, 
+                                de um jeito simples que você nunca imaginou!"
                             </p>
                         </div>
                     </div>
@@ -263,107 +284,113 @@
                     <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
                         O que Você Vai Descobrir
                     </h2>
-                    <p class="text-2xl text-gray-600 max-w-4xl mx-auto">
-                        7 módulos repletos de descobertas que vão transformar sua relação com a tecnologia
+                    <p class="text-2xl text-gray-600 max-w-4xl mx-auto mb-6">
+                        7 módulos repletos de descobertas que vão transformar sua relação com a IA Generativa
                     </p>
+                    <div class="bg-[#734ef7]/10 border border-[#734ef7]/20 rounded-lg p-4 max-w-2xl mx-auto">
+                        <p class="text-lg text-[#734ef7] font-semibold">
+                            📚 <strong>Plano Básico:</strong> Acesso aos 4 primeiros módulos<br>
+                            🎯 <strong>Planos Completo e Premium:</strong> Acesso completo aos 7 módulos
+                        </p>
+                    </div>
                 </div>
                 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Módulo 1 -->
-                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl border border-blue-200">
-                        <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <div class="bg-gradient-to-br from-[#734ef7]/10 to-[#734ef7]/20 p-8 rounded-2xl border border-[#734ef7]/30">
+                        <div class="w-16 h-16 bg-[#734ef7] rounded-full flex items-center justify-center mb-6 mx-auto">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                             </svg>
                         </div>
                         <div class="text-center">
-                            <span class="text-blue-600 font-semibold text-lg">Módulo 1</span>
-                            <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4">Descobrindo que Já Sou Tech!</h3>
-                            <p class="text-gray-600 text-lg">Revelação: você já usa IA no Google, WhatsApp, GPS...</p>
+                            <span class="text-[#734ef7] font-semibold text-lg">Módulo 1</span>
+                            <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4">IA que Conversa e Entende</h3>
+                            <p class="text-gray-600 text-lg">Descubra o ChatGPT, Gemini e como conversar com IA</p>
                         </div>
                     </div>
 
                     <!-- Módulo 2 -->
-                    <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl border border-purple-200">
-                        <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <div class="bg-gradient-to-br from-[#68abe2]/10 to-[#68abe2]/20 p-8 rounded-2xl border border-[#68abe2]/30">
+                        <div class="w-16 h-16 bg-[#68abe2] rounded-full flex items-center justify-center mb-6 mx-auto">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
                             </svg>
                         </div>
                         <div class="text-center">
-                            <span class="text-purple-600 font-semibold text-lg">Módulo 2</span>
-                            <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4">Laboratório de IA</h3>
-                            <p class="text-gray-600 text-lg">Experimente ChatGPT, Claude e Manus na prática</p>
+                            <span class="text-[#68abe2] font-semibold text-lg">Módulo 2</span>
+                            <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4">IA Generativa no Dia a Dia</h3>
+                            <p class="text-gray-600 text-lg">Use IA para organizar vida, saúde e tarefas cotidianas</p>
                         </div>
                     </div>
 
                     <!-- Módulo 3 -->
-                    <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl border border-green-200">
-                        <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <div class="bg-gradient-to-br from-[#a58f9f]/10 to-[#a58f9f]/20 p-8 rounded-2xl border border-[#a58f9f]/30">
+                        <div class="w-16 h-16 bg-[#a58f9f] rounded-full flex items-center justify-center mb-6 mx-auto">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                             </svg>
                         </div>
                         <div class="text-center">
-                            <span class="text-green-600 font-semibold text-lg">Módulo 3</span>
-                            <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4">IA que "Vê" Fotos</h3>
-                            <p class="text-gray-600 text-lg">Tire foto de qualquer coisa e pergunte o que é</p>
+                            <span class="text-[#a58f9f] font-semibold text-lg">Módulo 3</span>
+                            <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4">IA que Cria Imagens e Conteúdo</h3>
+                            <p class="text-gray-600 text-lg">Gere imagens, textos e conteúdos incríveis com IA</p>
                         </div>
                     </div>
 
                     <!-- Módulo 4 -->
-                    <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-8 rounded-2xl border border-yellow-200">
-                        <div class="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <div class="bg-gradient-to-br from-[#7f8da5]/10 to-[#7f8da5]/20 p-8 rounded-2xl border border-[#7f8da5]/30">
+                        <div class="w-16 h-16 bg-[#7f8da5] rounded-full flex items-center justify-center mb-6 mx-auto">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                             </svg>
                         </div>
                         <div class="text-center">
-                            <span class="text-yellow-600 font-semibold text-lg">Módulo 4</span>
-                            <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4">IA no Meu Dia a Dia</h3>
-                            <p class="text-gray-600 text-lg">Organize vida, saúde, finanças com IA</p>
+                            <span class="text-[#7f8da5] font-semibold text-lg">Módulo 4</span>
+                            <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4">ChatGPT Avançado</h3>
+                            <p class="text-gray-600 text-lg">Domine técnicas avançadas e se torne expert em IA</p>
                         </div>
                     </div>
 
                     <!-- Módulo 5 -->
-                    <div class="bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-2xl border border-red-200">
-                        <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <div class="bg-gradient-to-br from-[#cacbb9]/20 to-[#cacbb9]/30 p-8 rounded-2xl border border-[#cacbb9]/40 opacity-75">
+                        <div class="w-16 h-16 bg-[#cacbb9] rounded-full flex items-center justify-center mb-6 mx-auto">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
                             </svg>
                         </div>
                         <div class="text-center">
-                            <span class="text-red-600 font-semibold text-lg">Módulo 5</span>
-                            <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4">IA que Cria Conteúdo</h3>
-                            <p class="text-gray-600 text-lg">Textos, emails, mensagens perfeitas</p>
+                            <span class="text-[#cacbb9] font-semibold text-lg">Módulo 5 - Completo/Premium</span>
+                            <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4">Prompting Profissional</h3>
+                            <p class="text-gray-600 text-lg">Aprenda a criar comandos perfeitos para IA</p>
                         </div>
                     </div>
 
                     <!-- Módulo 6 -->
-                    <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-8 rounded-2xl border border-indigo-200">
-                        <div class="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <div class="bg-gradient-to-br from-[#cacbb9]/20 to-[#cacbb9]/30 p-8 rounded-2xl border border-[#cacbb9]/40 opacity-75">
+                        <div class="w-16 h-16 bg-[#cacbb9] rounded-full flex items-center justify-center mb-6 mx-auto">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                             </svg>
                         </div>
                         <div class="text-center">
-                            <span class="text-indigo-600 font-semibold text-lg">Módulo 6</span>
-                            <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4">IA Segura e Ética</h3>
-                            <p class="text-gray-600 text-lg">Use IA com segurança e responsabilidade</p>
+                            <span class="text-[#cacbb9] font-semibold text-lg">Módulo 6 - Completo/Premium</span>
+                            <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4">Outras IAs e Ferramentas</h3>
+                            <p class="text-gray-600 text-lg">Explore Claude, Manus e outras IAs incríveis</p>
                         </div>
                     </div>
 
                     <!-- Módulo 7 -->
-                    <div class="bg-gradient-to-br from-pink-50 to-pink-100 p-8 rounded-2xl border border-pink-200 md:col-span-2 lg:col-span-1">
-                        <div class="w-16 h-16 bg-pink-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <div class="bg-gradient-to-br from-[#cacbb9]/20 to-[#cacbb9]/30 p-8 rounded-2xl border border-[#cacbb9]/40 md:col-span-2 lg:col-span-1 opacity-75">
+                        <div class="w-16 h-16 bg-[#cacbb9] rounded-full flex items-center justify-center mb-6 mx-auto">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                             </svg>
                         </div>
                         <div class="text-center">
-                            <span class="text-pink-600 font-semibold text-lg">Módulo 7</span>
-                            <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4">Futuro da IA</h3>
-                            <p class="text-gray-600 text-lg">Prepare-se para as próximas novidades</p>
+                            <span class="text-[#cacbb9] font-semibold text-lg">Módulo 7 - Completo/Premium</span>
+                            <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4">Segurança e Futuro da IA</h3>
+                            <p class="text-gray-600 text-lg">Use IA com segurança e prepare-se para o futuro</p>
                         </div>
                     </div>
                 </div>
@@ -454,8 +481,9 @@
                                 <span class="text-4xl font-bold text-gray-900">6x de R$ 29,00</span>
                             </div>
                             
-                            <p class="text-xl text-blue-600 font-semibold">
-                                ou R$ 154,56 à vista (11% de desconto)
+                            <p class="text-lg text-[#734ef7] font-semibold">
+                                ou R$ 154,56 à vista<br>
+                                <span class="text-sm">(11% de desconto)</span>
                             </p>
                         </div>
                         
@@ -464,7 +492,7 @@
                                 <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                 </svg>
-                                <span class="text-gray-700">Acesso ao curso completo (7 módulos)</span>
+                                <span class="text-gray-700">Acesso aos 4 primeiros módulos</span>
                             </li>
                             <li class="flex items-start">
                                 <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -486,18 +514,20 @@
                             </li>
                         </ul>
                         
-                        <button 
-                            class="w-full py-4 px-6 rounded-lg font-semibold text-lg transition-all duration-200 bg-gray-100 hover:bg-gray-200 text-gray-900"
-                            onclick="window.open('https://pay.kiwify.com.br/BPJAAN2', '_blank');"
-                        >
-                            Começar Agora
-                        </button>
+                        <div class="pricing-buttons">
+                            <button 
+                                class="btn-oblongo w-full py-4 px-6 font-semibold text-lg transition-all duration-200 bg-gray-100 hover:bg-gray-200 text-gray-900"
+                                onclick="window.open('https://pay.kiwify.com.br/BPJAAN2', '_blank');"
+                            >
+                                Começar Agora
+                            </button>
+                        </div>
                     </div>
 
                     <!-- Plano Completo -->
-                    <div class="relative p-8 rounded-2xl border-2 border-blue-500 bg-blue-50">
+                    <div class="relative p-8 rounded-2xl border-2 border-[#734ef7] bg-[#734ef7]/5">
                         <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                            <span class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                            <span class="bg-[#734ef7] text-white px-4 py-2 rounded-full text-sm font-semibold">
                                 Mais Escolhido
                             </span>
                         </div>
@@ -514,8 +544,9 @@
                                 <span class="text-4xl font-bold text-gray-900">6x de R$ 49,00</span>
                             </div>
                             
-                            <p class="text-xl text-blue-600 font-semibold">
-                                ou R$ 261,15 à vista (11% de desconto)
+                            <p class="text-lg text-[#734ef7] font-semibold">
+                                ou R$ 261,15 à vista<br>
+                                <span class="text-sm">(11% de desconto)</span>
                             </p>
                         </div>
                         
@@ -524,7 +555,13 @@
                                 <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                 </svg>
-                                <span class="text-gray-700">Tudo do Plano Básico</span>
+                                <span class="text-gray-700">Acesso completo aos 7 módulos</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span class="text-gray-700">Aulas via WhatsApp com a IAsmim</span>
                             </li>
                             <li class="flex items-start">
                                 <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -536,19 +573,13 @@
                                 <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                 </svg>
-                                <span class="text-gray-700">ChatGPT integrado ao WhatsApp durante o curso</span>
+                                <span class="text-gray-700">Suporte humano por email e WhatsApp</span>
                             </li>
                             <li class="flex items-start">
                                 <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                 </svg>
-                                <span class="text-gray-700">Suporte humano por email e whatsapp</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                <span class="text-gray-700">Certificado digital de conclusão do curso</span>
+                                <span class="text-gray-700">Certificado digital de conclusão</span>
                             </li>
                             <li class="flex items-start">
                                 <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -558,12 +589,14 @@
                             </li>
                         </ul>
                         
-                        <button 
-                            class="w-full py-4 px-6 rounded-lg font-semibold text-lg transition-all duration-200 bg-blue-600 hover:bg-blue-700 text-white"
-                            onclick="window.open('https://pay.kiwify.com.br/BPJAAN2', '_blank');"
-                        >
-                            Começar Agora
-                        </button>
+                        <div class="pricing-buttons">
+                            <button 
+                                class="btn-oblongo w-full py-4 px-6 font-semibold text-lg transition-all duration-200 bg-[#734ef7] hover:bg-[#6341e6] text-white"
+                                onclick="window.open('https://pay.kiwify.com.br/BPJAAN2', '_blank');"
+                            >
+                                Começar Agora
+                            </button>
+                        </div>
                     </div>
 
                     <!-- Plano Premium -->
@@ -580,8 +613,9 @@
                                 <span class="text-4xl font-bold text-gray-900">6x de R$ 69,00</span>
                             </div>
                             
-                            <p class="text-xl text-blue-600 font-semibold">
-                                ou R$ 367,74 à vista (11% de desconto)
+                            <p class="text-lg text-[#734ef7] font-semibold">
+                                ou R$ 367,74 à vista<br>
+                                <span class="text-sm">(11% de desconto)</span>
                             </p>
                         </div>
                         
@@ -602,13 +636,13 @@
                                 <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                 </svg>
-                                <span class="text-gray-700">Acesso a 1 aula de monetização com IA (com mentor)</span>
+                                <span class="text-gray-700">Aula de monetização com IA (com mentor)</span>
                             </li>
                             <li class="flex items-start">
                                 <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                 </svg>
-                                <span class="text-gray-700">Certificador digital e físico de conclusão do curso</span>
+                                <span class="text-gray-700">Certificado digital e físico</span>
                             </li>
                             <li class="flex items-start">
                                 <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -618,12 +652,14 @@
                             </li>
                         </ul>
                         
-                        <button 
-                            class="w-full py-4 px-6 rounded-lg font-semibold text-lg transition-all duration-200 bg-gray-100 hover:bg-gray-200 text-gray-900"
-                            onclick="window.open('https://pay.kiwify.com.br/BPJAAN2', '_blank');"
-                        >
-                            Começar Agora
-                        </button>
+                        <div class="pricing-buttons">
+                            <button 
+                                class="btn-oblongo w-full py-4 px-6 font-semibold text-lg transition-all duration-200 bg-gray-100 hover:bg-gray-200 text-gray-900"
+                                onclick="window.open('https://pay.kiwify.com.br/BPJAAN2', '_blank');"
+                            >
+                                Começar Agora
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -674,12 +710,21 @@
                             Temos suporte humano para te ajudar sempre que precisar. Além disso, você pode repetir as aulas quantas vezes quiser.
                         </p>
                     </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                            O que acontece depois de pagar o curso? Como inicio?
+                        </h3>
+                        <p class="text-gray-600">
+                            Você receberá uma mensagem da IAsmim em seu WhatsApp te dando boas-vindas e iniciando seu curso!
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- CTA Final -->
-        <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        <section class="py-20 bg-gradient-to-r from-[#734ef7] to-[#68abe2] text-white">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-4xl md:text-5xl font-bold mb-8">
                     Pronto para Descobrir o Mundo da IA?
@@ -690,14 +735,14 @@
                 
                 <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
                     <button 
-                        class="bg-white text-blue-600 px-12 py-6 rounded-lg text-xl font-semibold hover:bg-gray-100 transition-all duration-200"
+                        class="btn-oblongo bg-white text-[#734ef7] px-12 py-6 text-xl font-semibold hover:bg-gray-100 transition-all duration-200"
                         onclick="window.open('https://pay.kiwify.com.br/BPJAAN2', '_blank');"
                     >
                         🚀 Começar Agora
                     </button>
                     
                     <div class="text-center sm:text-left">
-                        <p class="text-lg opacity-90">💳 Parcelamento em até 10x</p>
+                        <p class="text-lg opacity-90">💳 Parcelamento em até 6x</p>
                         <p class="text-lg opacity-90">🔒 Compra 100% segura</p>
                     </div>
                 </div>
@@ -710,6 +755,7 @@
                 <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-lg">
                     <p>&copy; 2024 Descomplicando IA. Todos os direitos reservados.</p>
                     <p class="text-sm mt-2">CLEYTON RIBEIRO SOARES SERVIÇOS ADMINISTRATIVOS - CNPJ: 09.640.600/0001-99</p>
+                    <p class="text-sm mt-4">Dúvidas? Fale conosco: <a href="mailto:contato@cursodescomplicandoia.com.br" class="text-[#68abe2] hover:text-[#5a9bd4]">contato@cursodescomplicandoia.com.br</a></p>
                 </div>
             </div>
         </footer>
